@@ -1,0 +1,51 @@
+/* General Styles */
+
+    .hidden {
+        display: none;
+    }
+    
+
+    body {
+        font-family: Arial, sans-serif;
+        background: url('../images/Eventpic1.jpg') no-repeat center center fixed;
+        background-size: cover;
+        color: #333;
+        line-height: 1.6;
+    
+    }
+
+    
+    .header {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #354230;
+        overflow: hidden;
+    }
+    
+    nav ul li {
+        display: inline-block;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 0.8rem 1rem;
+        display: inline-block;
+    }
+    
+    nav ul li a:hover {
+        background-color: #575757;
+    }
+    
+    main {
+        padding: 2rem;
+    }
+    

@@ -1,0 +1,249 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("images/pexels-photo-4631071.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #388E3C; /* Slightly darker green for better contrast */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.96); /* Subtle transparency */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #388E3C;
+    border-bottom: 3px solid #388E3C;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.summary-details p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    overflow-x: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #388E3C;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #F9F9F9;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+table tbody tr:hover {
+    background-color: #E8F5E9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+table td button {
+    padding: 0.6rem 1rem;
+    border: none;
+    background-color: #388E3C;
+    color: #FFFFFF;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+table td button:hover {
+    background-color: #2E7D32;
+    transform: scale(1.05);
+}
+
+table td button:focus {
+    outline: 2px dashed #FFD700; /* Gold outline for focus */
+    outline-offset: 3px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for better focus */
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+    position: relative;
+}
+
+.modal-content h3 {
+    margin-bottom: 1.2rem;
+    color: #388E3C;
+    font-size: 1.8rem;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.modal-content button {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    background-color: #388E3C;
+    color: #FFFFFF;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.modal-content button:hover {
+    background-color: #2E7D32;
+    transform: scale(1.05);
+}
+
+.modal-content .close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal-content .close:hover {
+    color: #000;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #388E3C;
+    color: #FFFFFF;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    table th, table td {
+        font-size: 0.85rem;
+        padding: 0.6rem;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+    }
+
+    .modal-content button {
+        font-size: 0.9rem;
+    }
+}

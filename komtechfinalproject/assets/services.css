@@ -1,0 +1,108 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/pexels-photo-12881020.jpg'); /* Add the background image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents repetition of the image */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    color: #212529;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background-color: rgba(17, 101, 48, 0.85); /* Add transparency for contrast with background */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+.navigation {
+    background-color: rgba(45, 70, 94, 0.9); /* Add transparency for contrast */
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #116530;
+    color: #ffffff;
+}
+
+.navigation .active {
+    background-color: #ffffff;
+    color: #2d465e;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85); /* Add a translucent background for readability */
+    border-radius: 8px;
+}
+
+.service {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service h2 {
+    color: #2d465e;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.service p {
+    color: #212529;
+    font-size: 1.1rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgba(17, 101, 48, 0.85); /* Add transparency for contrast */
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}

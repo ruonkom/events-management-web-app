@@ -1,0 +1,71 @@
+
+       /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/pexels-photo-12881020.jpg'); /* Add the background image */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-repeat: no-repeat; /* Prevents repetition of the image */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+    color: #212529;
+    line-height: 1.6;
+}
+.go-back {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+.go-back:hover {
+    background-color: #0056b3;
+
+}
+        .team-section {
+            padding: 50px 20px;
+
+       
+        }
+        .team-section h1 {
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            color: #222;
+        }
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .member {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .member h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #444;
+        }
+        .member p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #555;
+        }

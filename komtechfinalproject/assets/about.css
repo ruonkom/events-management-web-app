@@ -1,0 +1,104 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #212529;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background-color: #116530;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+.navigation {
+    background-color: #2d5e35;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation li {
+    display: inline;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #116530;
+    color: #ffffff;
+}
+
+.navigation .active {
+    background-color: #ffffff;
+    color: #2d465e;
+    border-radius: 5px;
+}
+
+/* Section Styles */
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content h2 {
+    color: rgb(219, 238, 50);
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+}
+
+.content p {
+    color: 	#ffffff;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #116530;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Eventpic1.jpg'); /* Updated image path */
+    background-size: cover; /* Ensures the image covers the viewport */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    background-position: center; /* Centers the background image */
+}
